@@ -1,23 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: rgb(45, 44, 44);
+}
+
 .logo{
     width: 200px;
+    padding-left: 3rem;
+    @media all and (min-width:768px){
+        width: 150px;
+    }
 }
+
+.icon1{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @media all and (min-width:768px){
+        display: none;
+    }
+}
+.icon2{
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .header{
+    font-size: 8rem;
     display:flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -4rem;
+    @media all and (min-width: 768px){ 
+        margin-bottom: 0rem;
+    }
+    
+    &__nav{
+        display:flex;
+        flex-direction: row;
+        width: 100%;  
+        height: 4rem; 
+        
+    }
+     &__navUl{
+        display:none;
+        list-style: none;
+        flex-grow: 5;
+        
+        @media all and (min-width: 768px){ 
+            display: flex;
+            gap: 6rem;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            background:linear-gradient(rgb(255, 255, 255), rgb(187, 91, 211));
+            border-radius: 10px;
+            transform: translateY(20%);
+            z-index:1;
+            box-shadow: 1px  4px 10px rgb(173, 37, 207);
+            text-shadow: 2px 1px rgb(202, 229, 253); 
+        }
+    }
 }
 
 .hero-opacity{
-    background-image: url(../images/kpopgroup.jfif);
+    font-size: 5rem;
+    background-image: url(../images/batallagrupos.jfif);
     background-size: cover;
-    background-position: 20% 60%;
     color: white;
-    height: 20rem;
-    position:absolute;
+    height: 75vh;
+    position:relative;
+    background-position: 50% 50%;
+    @media all and (min-width: 768px){ 
+       background-position: 50% 45%;
+    }
 }
 .hero{
-    background-color: rgb(239, 58, 169, 0.6);
+    background-color: rgba(251, 95, 209, 0.6);
     z-index: 2;
     height: 100%;
     overflow: hidden;
@@ -25,4 +88,38 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &__title{
+        font-family: 'Dancing Script', sans-serif;
+        font-size: 7rem;
+        line-height: 6rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        color: white;
+        padding-top: 2rem;
+        text-shadow: 3px 2px  rgb(125, 21, 126);
+        @media all and (min-width: 768px){ 
+            font-size: 10rem;
+            padding-bottom: 3rem;
+        }
+    }
+    &__p{
+        padding:3rem;
+        color: white;
+    }
+    &__button{
+        padding: 1rem 2rem 1rem 2rem;
+        border: none;
+        border-radius: 2rem;
+        background:linear-gradient(rgb(255, 255, 255), rgb(193, 53, 218));
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px  4px 10px rgb(173, 37, 207);
+    }
+    &__a{
+        text-decoration: none;
+        font-size: 2rem;
+        color: rgb(125, 21, 126);
+        font-weight: 600;
+    }
 }
