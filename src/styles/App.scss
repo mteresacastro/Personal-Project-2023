@@ -59,12 +59,10 @@
             justify-content: center;
             align-items: center;
             font-weight: 500;
-            background:linear-gradient(rgb(255, 255, 255), #3ebdf4);
-            border-radius: 10px;
-            border: none;
-            transform: translateY(20%);
-            z-index:1;
-            text-shadow: 2px 1px rgb(202, 229, 253); 
+            //background:radial-gradient(rgb(119, 209, 247), #2596be);
+            //transform: translateY(20%);
+            //z-index:1;
+    
             &--li{
                 text-decoration: none;
                 font-size: 1.8rem;
@@ -82,12 +80,13 @@
     height: 75vh;
     position:relative;
     background-position: 50% 50%;
+    box-shadow: 0px 0px 30px 1px rgb(251, 95, 209);
     @media all and (min-width: 768px){ 
        background-position: 50% 45%;
     }
 }
 .hero{
-    background-color: rgba(251, 95, 209, 0.6);
+    background-color: rgba(251, 95, 209, 0.4);
     z-index: 2;
     height: 100%;
     overflow: hidden;
@@ -103,7 +102,7 @@
         padding-right: 4rem;
         color: white;
         padding-top: 2rem;
-        text-shadow: 3px 2px #2a189e;
+        text-shadow: 3px 2px #8a028d;
         @media all and (min-width: 768px){ 
             font-size: 10rem;
             padding-bottom: 3rem;
@@ -117,19 +116,33 @@
         padding: 1rem 2rem 1rem 2rem;
         border: none;
         border-radius: 2rem;
-        background:linear-gradient(rgb(255, 255, 255), #3ebdf4);
+        background: rgb(237, 38, 174);
         border-radius: 20px;
         display: flex;
         justify-content: center;
-        box-shadow: 1px  4px 10px #2a189e;
     }
 
     &__a{
         font-family: 'Work Sans';
         text-decoration: none;
         font-size: 2rem;
-        color:  #2a189e;
+        color:  rgb(255, 255, 255);
         font-weight: 600;
         cursor: pointer;
     }
+}
+.explainSection{
+    padding: 4rem;
+    &__title{
+        font-size: 3rem;
+        padding-bottom: 2rem;;
+    }
+    &__article{
+        font-size: 2.5rem;
+        
+        &--h3{padding-top: 10rem;}
+        &--img{}
+        &--desc{}
+    }
+
 }

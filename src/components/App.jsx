@@ -11,7 +11,7 @@ function App() {
         <i className="icon2 fa-solid fa-user-large"></i>
         <nav className="header__nav">
           <ul className= "header__navUl">
-            <li><a className= "header__navUl--li" href="">¿De qué va ésto?</a></li>
+            <li><a className= "header__navUl--li" href="#explainSection">¿De qué va ésto?</a></li>
             <li><a className= "header__navUl--li" href="">Grupos</a></li>
             <li><a className= "header__navUl--li" href="">Reto</a></li>
             <li><a className= "header__navUl--li" href="">Ranking</a></li>
@@ -27,8 +27,23 @@ function App() {
           <button className="hero__button"><a className="hero__a"href="">¡Participa!</a></button>
         </div>
         </section>
-        <section>
-
+        <section className= "explainSection" id="explainSection">
+          <h2 className= "explainSection__title">¿De qué va ésto?</h2>
+          <article className= "explainSection__article">
+            <h3 className= "explainSection__article--h3">aqui paso a paso</h3>
+            <img className= "explainSection__article--img" src="" alt="" />
+            <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
+          </article>
+          <article className= "explainSection__article">
+            <h3 className= "explainSection__article--h3">otro paso</h3>
+            <img className= "explainSection__article--img" src="" alt="" />
+            <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
+          </article>
+          <article className= "explainSection__article">
+            <h3 className= "explainSection__article--h3">siguiente paso</h3>
+            <img className= "explainSection__article--img" src="" alt="" />
+            <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
+          </article>
         </section>
 
       </main>
