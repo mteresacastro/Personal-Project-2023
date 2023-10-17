@@ -7,7 +7,7 @@ function App() {
     <div>
       <header className="header">
         <i className="icon1 fa-solid fa-bars"></i>
-        <img className="logo" src="/src/images/logofinal300.png" alt="logo k-dance war" />
+        <img className="logo" src="/src/images/logofinal300ok.png" alt="logo k-dance war" />
         <i className="icon2 fa-solid fa-user-large"></i>
         <nav className="header__nav">
           <ul className= "header__navUl">
@@ -31,17 +31,22 @@ function App() {
           <h2 className= "explainSection__title">¿De qué va ésto?</h2>
           <article className= "explainSection__article">
             <h3 className= "explainSection__article--h3">aqui paso a paso</h3>
-            <img className= "explainSection__article--img" src="" alt="" />
+            <img className= "explainSection__article--img" src="/src/images/placeholder640x360.png" alt="" />
             <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
           </article>
           <article className= "explainSection__article">
             <h3 className= "explainSection__article--h3">otro paso</h3>
-            <img className= "explainSection__article--img" src="" alt="" />
+            <img className= "explainSection__article--img" src="/src/images/placeholder640x360.png" alt="" />
             <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
           </article>
           <article className= "explainSection__article">
             <h3 className= "explainSection__article--h3">siguiente paso</h3>
-            <img className= "explainSection__article--img" src="" alt="" />
+            <img className= "explainSection__article--img" src="/src/images/placeholder640x360.png" alt="" />
+            <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
+          </article>
+          <article className= "explainSection__article">
+            <h3 className= "explainSection__article--h3">paso final</h3>
+            <img className= "explainSection__article--img" src="/src/images/placeholder640x360.png" alt="" />
             <p className= "explainSection__article--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio maiores, et culpa cupiditate distinctio consectetur, magnam sunt modi iure iste ullam quasi autem a tenetur itaque natus ipsum pariatur?</p>
           </article>
         </section>

@@ -6,29 +6,7 @@
     color: rgb(45, 44, 44);
 }
 
-.logo{
-    width: 200px;
-    padding-left: 3rem;
-    @media all and (min-width:768px){
-        width: 150px;
-    }
-}
 
-.icon1{
-    font-size: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    @media all and (min-width:768px){
-        display: none;
-    }
-}
-.icon2{
-    font-size: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    cursor: pointer;
-}
 
 .header{
     font-size: 8rem;
@@ -40,13 +18,43 @@
     @media all and (min-width: 768px){ 
         margin-bottom: 0rem;
     }
+    .logo{
+        width: 150px;
+        padding: 1rem 1rem 2rem 1rem;
+        @media all and (min-width:768px){
+            width: 170px;
+        }
+    }
     
+    .icon1{
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        :hover{
+            color: rgb(237, 38, 174);
+        }
+        @media all and (min-width:768px){
+            display: none;
+        }
+    }
+    .icon2{
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        :hover{
+            color: rgb(237, 38, 174);
+        }
+    }
     &__nav{
         display:flex;
         flex-direction: row;
         width: 100%;  
-        height: 4rem; 
-        
+        height: 3.5rem; 
+        @media all and (min-width: 768px){
+            //transform: translateY(-70%);
+        }
     }
      &__navUl{
         display:none;
@@ -67,6 +75,9 @@
                 text-decoration: none;
                 font-size: 1.8rem;
                 cursor: pointer;
+                &:hover{
+                    color: rgb(237, 38, 174);
+                };
             }
         }
     }
@@ -77,10 +88,10 @@
     background-image: url(../images/batallagrupos.jfif);
     background-size: cover;
     color: white;
-    height: 75vh;
+    //height: 75vh;
     position:relative;
     background-position: 50% 50%;
-    box-shadow: 0px 0px 30px 1px rgb(251, 95, 209);
+    box-shadow: 0px 0px 30px 1px rgb(251, 95, 209, 0.8);
     @media all and (min-width: 768px){ 
        background-position: 50% 45%;
     }
@@ -88,7 +99,7 @@
 .hero{
     background-color: rgba(251, 95, 209, 0.4);
     z-index: 2;
-    height: 100%;
+    //height: 100%;
     overflow: hidden;
     display:flex;
     flex-direction: column;
@@ -98,14 +109,14 @@
         font-family: 'Dancing Script', sans-serif;
         font-size: 7rem;
         line-height: 6rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding: 2rem 4rem 0rem 4rem;
         color: white;
         padding-top: 2rem;
         text-shadow: 3px 2px #8a028d;
+        text-align: center;
         @media all and (min-width: 768px){ 
             font-size: 10rem;
-            padding-bottom: 3rem;
+            padding: 5rem 3rem 3rem 3rem;
         }
     }
     &__p{
@@ -114,6 +125,7 @@
     }
     &__button{
         padding: 1rem 2rem 1rem 2rem;
+        margin: 3rem 2rem 6rem 2rem;
         border: none;
         border-radius: 2rem;
         background: rgb(237, 38, 174);
@@ -132,17 +144,36 @@
     }
 }
 .explainSection{
-    padding: 4rem;
+    padding: 2rem;
+    @media all and (min-width: 768px){
+        height: 30rem;
+    }
     &__title{
         font-size: 3rem;
         padding-bottom: 2rem;;
     }
     &__article{
         font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
         
-        &--h3{padding-top: 10rem;}
-        &--img{}
-        &--desc{}
+        &--h3{
+            padding: 1rem;}
+        &--img{
+            width: 25rem;
+            text-align: center;
+            @media all and (min-width: 768px){
+                width: 64rem;
+            }
+        }
+        &--desc{
+            padding-bottom: 2rem;
+            @media all and (min-width: 768px){
+                width: 64rem;
+            }
+        }
     }
 
 }
